@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UI Design | Amine Web</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b12;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            height: 75px;
+            padding: 0 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #0a0e18;
+
+            border-bottom: 1px solid #202838;
+        }
+
+        header h2 {
+            color: #00bfff;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 70vh;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 80px 8%;
+        }
+
+        .hero p {
+            color: #00bfff;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00bfff;
+        }
+
+        .hero .description {
+            max-width: 650px;
+            color: #aeb8c7;
+            font-size: 18px;
+        }
+
+        /* UI CARDS */
+
+        .section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .section > p {
+            color: #aeb8c7;
+            margin-bottom: 45px;
+        }
+
+        .designs {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .design {
+            background: #101621;
+
+            border: 1px solid #202b3d;
+
+            border-radius: 18px;
+
+            padding: 35px 25px;
+
+            transition: 0.4s;
+        }
+
+        .design:hover {
+            transform: translateY(-8px);
+
+            border-color: #00bfff;
+
+            box-shadow: 0 15px 40px rgba(0, 191, 255, 0.10);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .design h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .design p {
+            color: #aeb8c7;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 35px;
+        }
+
+        .skill {
+            padding: 12px 25px;
+
+            background: #111827;
+
+            border: 1px solid #263247;
+
+            border-radius: 8px;
+
+            color: #00bfff;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+
+            margin-top: 40px;
+
+            padding: 13px 25px;
+
+            background: #00bfff;
+
+            color: #061018;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+
+            box-shadow: 0 10px 25px rgba(0, 191, 255, 0.25);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 30px;
+
+            color: #788496;
+
+            border-top: 1px solid #202838;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+
+            .designs {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            header {
+                padding: 0 5%;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h2>Amine Web</h2>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#about">About</a>
+
+            <a href="index.html#projects">Projects</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <p>MY CREATIVE WORK</p>
+
+        <h1>
+            UI <span>Design</span>
+        </h1>
+
+        <p class="description">
+
+            I create clean, modern and user-friendly
+            interfaces for websites and applications.
+
+        </p>
+
+        <a href="index.html#projects" class="btn">
+            ← Back to Projects
+        </a>
+
+    </section>
+
+
+    <!-- DESIGNS -->
+
+    <section class="section">
+
+        <h2>What I Design</h2>
+
+        <p>
+            Modern interfaces focused on simplicity,
+            usability and a great user experience.
+        </p>
+
+
+        <div class="designs">
+
+
+            <div class="design">
+
+                <div class="icon">💻</div>
+
+                <h3>Website UI</h3>
+
+                <p>
+                    Modern and responsive interfaces
+                    for websites.
+                </p>
+
+            </div>
+
+
+            <div class="design">
+
+                <div class="icon">📱</div>
+
+                <h3>Mobile UI</h3>
+
+                <p>
+                    Clean interfaces designed
+                    for mobile applications.
+                </p>
+
+            </div>
+
+
+            <div class="design">
+
+                <div class="icon">🎨</div>
+
+                <h3>Creative Design</h3>
+
+                <p>
+                    Creative layouts with modern
+                    visual elements.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+
+        <h2>My Design Skills</h2>
+
+        <p>
+            Technologies and skills I use to create interfaces.
+        </p>
+
+
+        <div class="skills">
+
+            <div class="skill">UI Design</div>
+
+            <div class="skill">UX Design</div>
+
+            <div class="skill">HTML</div>
+
+            <div class="skill">CSS</div>
+
+            <div class="skill">Responsive Design</div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Amine Web. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

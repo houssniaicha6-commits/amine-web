@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Development | Amine Web</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b12;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            height: 75px;
+            padding: 0 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background: #0a0e18;
+
+            border-bottom: 1px solid #202838;
+        }
+
+        header h2 {
+            color: #00bfff;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 65vh;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 80px 8%;
+        }
+
+        .hero .welcome {
+            color: #00bfff;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00bfff;
+        }
+
+        .description {
+            max-width: 700px;
+            color: #aeb8c7;
+            font-size: 18px;
+        }
+
+        /* SERVICES */
+
+        .section {
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .section > p {
+            color: #aeb8c7;
+            margin-bottom: 45px;
+        }
+
+        .services {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .service {
+            background: #101621;
+
+            border: 1px solid #202b3d;
+
+            border-radius: 18px;
+
+            padding: 35px 25px;
+
+            transition: 0.4s;
+        }
+
+        .service:hover {
+            transform: translateY(-8px);
+
+            border-color: #00bfff;
+
+            box-shadow: 0 15px 40px rgba(0, 191, 255, 0.10);
+        }
+
+        .icon {
+            font-size: 50px;
+
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            font-size: 22px;
+
+            margin-bottom: 12px;
+        }
+
+        .service p {
+            color: #aeb8c7;
+        }
+
+        /* TECHNOLOGIES */
+
+        .technologies {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 35px;
+        }
+
+        .tech {
+            padding: 13px 25px;
+
+            background: #111827;
+
+            border: 1px solid #263247;
+
+            border-radius: 8px;
+
+            color: #00bfff;
+
+            transition: 0.3s;
+        }
+
+        .tech:hover {
+            border-color: #00bfff;
+
+            transform: translateY(-4px);
+        }
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+
+            margin-top: 40px;
+
+            padding: 13px 25px;
+
+            background: #00bfff;
+
+            color: #061018;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+
+            box-shadow: 0 10px 25px rgba(0, 191, 255, 0.25);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 30px;
+
+            color: #788496;
+
+            border-top: 1px solid #202838;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            header {
+                padding: 0 5%;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h2>Amine Web</h2>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#about">About</a>
+
+            <a href="index.html#projects">Projects</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <p class="welcome">
+            MY DEVELOPMENT SERVICES
+        </p>
+
+        <h1>
+            Web <span>Development</span>
+        </h1>
+
+        <p class="description">
+
+            I build modern, responsive and fast websites
+            using HTML, CSS and JavaScript.
+
+        </p>
+
+        <a href="index.html#projects" class="btn">
+            ← Back to Projects
+        </a>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section class="section">
+
+        <h2>What I Can Build</h2>
+
+        <p>
+            Different types of websites I can create.
+        </p>
+
+
+        <div class="services">
+
+
+            <div class="service">
+
+                <div class="icon">🌐</div>
+
+                <h3>Business Websites</h3>
+
+                <p>
+                    Professional websites for businesses,
+                    brands and services.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="icon">🛒</div>
+
+                <h3>E-Commerce</h3>
+
+                <p>
+                    Modern online stores with clean
+                    and responsive interfaces.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="icon">⚡</div>
+
+                <h3>Responsive Websites</h3>
+
+                <p>
+                    Websites that work perfectly on
+                    computers, tablets and phones.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGIES -->
+
+    <section class="section">
+
+        <h2>Technologies</h2>
+
+        <p>
+            Technologies I use to develop websites.
+        </p>
+
+
+        <div class="technologies">
+
+            <div class="tech">HTML5</div>
+
+            <div class="tech">CSS3</div>
+
+            <div class="tech">JavaScript</div>
+
+            <div class="tech">Responsive Design</div>
+
+            <div class="tech">UI / UX</div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Amine Web. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
